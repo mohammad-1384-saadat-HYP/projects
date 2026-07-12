@@ -1,0 +1,354 @@
+@media screen and (min-width: 375px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header_divar_mobile .flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    #header_divar_mobile .displayNone {
+        display: none !important;
+    }
+
+    #header_divar_mobile .focus {
+        border: 2px solid rgba(166, 38, 38, 0.56) !important;
+        border-radius: 4px !important;
+    }
+
+    #header_divar_mobile .searchMode {
+        height: 100vh !important;
+        max-height: calc(100vh - 24px) !important;
+    }
+
+    #header_divar_mobile .showElement {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: none !important;
+    }
+
+    #header_divar_mobile .hideElement {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+
+    #header_divar_mobile .hideElementDown {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transform: translateY(100%) !important;
+        position: absolute !important;
+        display: none !important;
+    }
+
+    #header_divar_mobile .hideElementRight {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transform: translateX(100%) !important;
+        position: absolute !important;
+        display: none !important;
+    }
+
+    #header_divar_mobile .hideElementLeft {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        transform: translateX(-100%) !important;
+        position: absolute !important;
+        display: none !important;
+    }
+
+    #header_divar_mobile .mainColor {
+        color: #000000 !important;
+    }
+
+    #header_divar_mobile {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        direction: rtl;
+        font-weight: bold;
+        position: relative;
+    }
+
+    #header_divar_mobile .container {
+        padding: 16px;
+    }
+
+    #header_divar_mobile .container_category {
+        padding: 16px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        column-gap: 8px;
+        row-gap: 12px;
+    }
+
+    #header_divar_mobile .container_category_option {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+
+    #header_divar_mobile .container_category_option_img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 4px;
+    }
+
+    #header_divar_mobile .container_category_option_img > img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #header_divar_mobile .category_modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.48);
+        transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    #header_divar_mobile .category_modal_content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 567px;
+        background-color: #ffffff;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 16px 8px;
+        transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    #header_divar_mobile .category_modal_content > div:first-child {
+        width: 48px;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+    }
+
+    #header_divar_mobile .category_modal_content_back {
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #dbdbe4;
+        position: relative;
+        font-size: 17px;
+    }
+
+    #header_divar_mobile .category_modal_content_back > div:first-child {
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.56);
+    }
+
+    #header_divar_mobile .category_modal_content_back > div:first-child > div {
+        width: 13px;
+        height: 13px;
+        margin: 0 5px;
+    }
+
+    #header_divar_mobile .category_modal_content_back > div:first-child > div > svg {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        fill: rgba(0, 0, 0, 0.56);
+    }
+
+    #header_divar_mobile .category_modal_content_back_icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.04);
+        border-radius: 50%;
+    }
+
+    #header_divar_mobile .category_modal_content_back_icon > svg {
+        width: auto;
+        height: auto;
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    #header_divar_mobile .category_modal_content_category {
+        width: 100%;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-X: hidden;
+    }
+
+    #header_divar_mobile .category_modal_content_category > * {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #header_divar_mobile .category_modal_content_category * {
+        box-sizing: border-box;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search {
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid #c2c2c2;
+        border-radius: 3px;
+        margin: 16px 0;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search > div > svg {
+        width: auto;
+        height: auto;
+        max-width: 16px;
+        max-height: 16px;
+        fill: #c2c2c2;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search > div:first-child {
+        width: 39px;
+        height: 40px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search > div:last-child {
+        position: absolute;
+        left: 0;
+        width: 39px;
+        height: 40px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search_input {
+        width: calc(100% - 39px);
+        height: calc(100% - 2px);
+        border: 0;
+        outline: 0;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    #header_divar_mobile .category_modal_content_category_search_input::placeholder {
+        color: #c2c2c2;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder {
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder > div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1), transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2,
+    #header_divar_mobile .category_modal_content_category_holder_Lv3,
+    #header_divar_mobile .category_modal_content_category_holder_main,
+    #header_divar_mobile .category_modal_content_category_holder_search {
+        width: 100%;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option,
+    #header_divar_mobile .category_modal_content_category_holder_Lv3_option,
+    #header_divar_mobile .category_modal_content_category_holder_main_option {
+        width: 100%;
+        height: 48px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+        position: relative;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > div:first-child {
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_main_option > div:first-child {
+        width: 30px;
+        height: 30px;
+        margin-left: 16px;
+        margin-bottom: 5px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > div:first-child > img,
+    #header_divar_mobile .category_modal_content_category_holder_main_option > div:first-child > img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > div:last-child,
+    #header_divar_mobile .category_modal_content_category_holder_main_option > div:last-child {
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > div:last-child > svg,
+    #header_divar_mobile .category_modal_content_category_holder_main_option > div:last-child > svg {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        fill: rgba(0, 0, 0, 0.32);
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > a,
+    #header_divar_mobile .category_modal_content_category_holder_Lv3_option > a {
+        color: #000000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > a > div:first-child,
+    #header_divar_mobile .category_modal_content_category_holder_Lv3_option > a > div:first-child {
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+
+    #header_divar_mobile .category_modal_content_category_holder_Lv2_option > a > div:first-child > img,
+    #header_divar_mobile .category_modal_content_category_holder_Lv3_option > a > div:first-child > img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
